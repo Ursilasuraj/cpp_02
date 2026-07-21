@@ -6,7 +6,7 @@
 #    By: uvadakku <uvadakku@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/23 09:24:37 by uvadakku          #+#    #+#              #
-#    Updated: 2026/05/23 11:36:36 by uvadakku         ###   ########.fr        #
+#    Updated: 2026/07/17 17:42:49 by uvadakku         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ SRC_DIR = srcs
 OBJ_DIR = objs
 
 SRCS = main.cpp \
-							Fixed.cpp
+	Fixed.cpp
 
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
 

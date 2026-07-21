@@ -6,7 +6,7 @@
 /*   By: uvadakku <uvadakku@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/23 09:24:14 by uvadakku          #+#    #+#             */
-/*   Updated: 2026/05/24 06:46:03 by uvadakku         ###   ########.fr       */
+/*   Updated: 2026/07/21 18:20:13 by uvadakku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,14 @@ Fixed::Fixed() : _rawbits(0) {}
 
 Fixed::Fixed(const int n) : _rawbits(n << fractional_bits) {}
 
-Fixed::Fixed(const float f) : _rawbits(static_cast<int>(std::roundf(f * (1 << fractional_bits)))) {}
+Fixed::Fixed(const float f)
+{
+    float offset = 0.5f;
+    if (f < 0)
+        offset = -0.5f;
+
+    _rawbits = static_cast<int>(f * (1 << fractional_bits) + offset);
+}
 
 Fixed::Fixed(const Fixed &other) : _rawbits(other._rawbits) {}
 

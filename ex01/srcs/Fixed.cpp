@@ -6,7 +6,7 @@
 /*   By: uvadakku <uvadakku@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/21 14:27:33 by uvadakku          #+#    #+#             */
-/*   Updated: 2026/05/23 07:34:07 by uvadakku         ###   ########.fr       */
+/*   Updated: 2026/07/21 18:18:27 by uvadakku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,13 @@ Fixed::Fixed(const int n) {
 
 Fixed::Fixed(const float f)
 {
+	float offset = 0.5f;
 	std::cout << "Float constructor called" << std::endl;
-	this->_rawbits = (int)std::round(f * (1 << fractional_bits));
+	if (f < 0)
+		offset = -0.5f;
+	this->_rawbits = (int)(f * (1 << fractional_bits) + offset);
 }
+
 Fixed::Fixed(const Fixed &other) : _rawbits(other._rawbits) {
 	std::cout << "Copy constructor called" << std::endl;
 }

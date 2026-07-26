@@ -2,7 +2,7 @@
 #define POINT_HPP
 
 #include "Fixed.hpp"
-#include "iostream.h"
+#include <iostream>
 
 class Point
 {
@@ -15,5 +15,11 @@ class Point
 		Point(Point const &other); //copy constructor
 		Point &operator = (const Point &other); //copy assignment operator
 	 ~Point();
-}
+
+	Fixed const &getX() const;
+	Fixed const &getY() const;
+};
+
+bool bsp (Point const a, Point const b, Point const c, Point const point);
+
 #endif

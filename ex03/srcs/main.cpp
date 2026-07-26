@@ -1,32 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Point.cpp                                          :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: uvadakku <uvadakku@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/26 15:52:33 by uvadakku          #+#    #+#             */
-/*   Updated: 2026/07/26 17:49:54 by uvadakku         ###   ########.fr       */
+/*   Created: 2026/07/26 17:45:34 by uvadakku          #+#    #+#             */
+/*   Updated: 2026/07/26 17:45:35 by uvadakku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Point.hpp"
-#include <iostream>
-
-Point::Point() : _x(0), _y(0) {}
-
-Point::Point(float const x, float const y) : _x(x), _y(y) {}
-
-Point::Point(Point const &other) : _x(other._x), _y(other._y) {}
-
-Point &Point::operator=(Point const &other)
-{
-	if (this != &other)
-	{
-		const_cast<Fixed&>(_x) = other._x;
-		const_cast<Fixed&>(_y) = other._y;
-	}
-	return *this;
-}
-
-Point::~Point() {}

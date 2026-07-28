@@ -6,7 +6,7 @@
 /*   By: uvadakku <uvadakku@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/26 15:52:33 by uvadakku          #+#    #+#             */
-/*   Updated: 2026/07/26 17:49:54 by uvadakku         ###   ########.fr       */
+/*   Updated: 2026/07/28 16:40:44 by uvadakku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,13 @@ Point &Point::operator=(Point const &other)
 }
 
 Point::~Point() {}
+
+Fixed const &Point::getX() const
+{
+ return _x;
+}
+
+Fixed const &Point::getY() const
+{
+ return _y;
+}

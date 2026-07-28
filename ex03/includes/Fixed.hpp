@@ -6,7 +6,7 @@
 /*   By: uvadakku <uvadakku@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/26 16:14:04 by uvadakku          #+#    #+#             */
-/*   Updated: 2026/07/26 21:59:08 by uvadakku         ###   ########.fr       */
+/*   Updated: 2026/07/28 16:08:08 by uvadakku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class Fixed
 		~Fixed();
 	
 	int getRawBits(void) const;
-	void setRawBits(int const raw)const;
+	void setRawBits(int raw);
 	float toFloat(void)const;
 	int toInt(void)const;
 	

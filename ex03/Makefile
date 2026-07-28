@@ -2,7 +2,7 @@ CXX = c++
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -I includes
 
-NAME = fixed_point
+NAME = bsp
 
 SRC_DIR = srcs
 OBJ_DIR = objs
@@ -10,7 +10,7 @@ OBJ_DIR = objs
 SRCS = main.cpp \
 	Fixed.cpp \
 	Point.cpp \
-	
+	bsp.cpp
 
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
 

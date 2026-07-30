@@ -6,7 +6,7 @@
 /*   By: uvadakku <uvadakku@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/20 08:54:38 by uvadakku          #+#    #+#             */
-/*   Updated: 2026/07/21 18:12:26 by uvadakku         ###   ########.fr       */
+/*   Updated: 2026/07/30 15:44:18 by uvadakku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,19 +17,18 @@
 
 class Fixed 
 {
-	private:
-		int value;
-		static const int fractional_bits;
-		
-	public:
-		Fixed();  
-		Fixed(const Fixed &copy);
-		//Deconstructor
-		~Fixed(); 
-		//overloaded Operators
-		Fixed &operator=(const Fixed &other);
-		//public Methods
-		int getRawBits( void ) const;
-		void setRawBits( int const raw );
+    private:
+        int _rawBits;
+        static const int fractional_bits = 8;
+        
+    public:
+        Fixed();  
+        Fixed(const Fixed &copy);
+        Fixed &operator=(const Fixed &other);
+        ~Fixed(); 
+
+        int getRawBits( void ) const;
+        void setRawBits( int const raw );
 };
-#endif
+
+#endif 

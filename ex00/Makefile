@@ -2,13 +2,13 @@ CXX = c++
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -I includes
 
-NAME = fixed_point
+NAME = ex00
 
 SRC_DIR = srcs
 OBJ_DIR = objs
 
 SRCS = main.cpp \
-							Fixed.cpp
+		Fixed.cpp
 
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
 

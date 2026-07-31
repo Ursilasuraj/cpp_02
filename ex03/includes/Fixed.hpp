@@ -6,7 +6,7 @@
 /*   By: uvadakku <uvadakku@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/26 16:14:04 by uvadakku          #+#    #+#             */
-/*   Updated: 2026/07/28 16:08:08 by uvadakku         ###   ########.fr       */
+/*   Updated: 2026/07/31 11:47:09 by uvadakku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,10 +53,10 @@ class Fixed
 	
 	//min /max
 	   
-	static Fixed& min(Fixed& a, Fixed &b);
-	static Fixed const& min(Fixed const& a, Fixed const& b);
-	static Fixed&       max(Fixed& a, Fixed& b);
- static Fixed const& max(Fixed const& a, Fixed const& b);
+	static Fixed &min(Fixed& a, Fixed &b);
+	static Fixed const &min(Fixed const& a, Fixed const& b);
+	static Fixed &max(Fixed& a, Fixed& b);
+ 	static Fixed const &max(Fixed const& a, Fixed const& b);
 
 };
 

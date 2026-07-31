@@ -1,8 +1,20 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: uvadakku <uvadakku@student.42heilbronn.    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2026/07/31 11:57:47 by uvadakku          #+#    #+#              #
+#    Updated: 2026/07/31 11:57:48 by uvadakku         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 CXX = c++
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -I includes
 
-NAME = bsp
+NAME = ex03
 
 SRC_DIR = srcs
 OBJ_DIR = objs

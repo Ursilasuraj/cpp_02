@@ -6,7 +6,7 @@
 /*   By: uvadakku <uvadakku@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/23 09:24:14 by uvadakku          #+#    #+#             */
-/*   Updated: 2026/07/21 18:20:13 by uvadakku         ###   ########.fr       */
+/*   Updated: 2026/07/30 19:05:49 by uvadakku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,19 +88,50 @@ Fixed Fixed::operator--(int) {
 }
 
 Fixed &Fixed::min(Fixed &a, Fixed &b) {
-	return (a < b) ? a : b;
+	if (a < b)
+	{
+		return a;
+	}
+	else
+	{
+		return b;
+	}
 }
 
-const Fixed &Fixed::min(const Fixed &a, const Fixed &b) {
-	return (a < b) ? a : b;
+const Fixed &Fixed::min(const Fixed &a, const Fixed &b) 
+{
+    if (a < b)
+    {
+        return a;
+    }
+    else
+    {
+        return b;
+    }
 }
 
-Fixed &Fixed::max(Fixed &a, Fixed &b) {
-	return (a > b) ? a : b;
+Fixed &Fixed::max(Fixed &a, Fixed &b) 
+{
+    if (a > b)
+    {
+        return a;
+    }
+    else
+    {
+        return b;
+    }
 }
 
-const Fixed &Fixed::max(const Fixed &a, const Fixed &b) {
-	return (a > b) ? a : b;
+const Fixed &Fixed::max(const Fixed &a, const Fixed &b) 
+{
+    if (a > b)
+    {
+        return a;
+    }
+    else
+    {
+        return b;
+    }
 }
 
 int Fixed::getRawBits(void) const {

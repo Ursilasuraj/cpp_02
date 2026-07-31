@@ -6,7 +6,7 @@
 #    By: uvadakku <uvadakku@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/23 09:24:37 by uvadakku          #+#    #+#              #
-#    Updated: 2026/07/17 17:42:49 by uvadakku         ###   ########.fr        #
+#    Updated: 2026/07/30 18:56:38 by uvadakku         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ CXX = c++
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -I includes
 
-NAME = fixed_point
+NAME = ex02
 
 SRC_DIR = srcs
 OBJ_DIR = objs

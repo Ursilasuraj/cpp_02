@@ -6,7 +6,7 @@
 #    By: uvadakku <uvadakku@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/21 14:52:06 by uvadakku          #+#    #+#              #
-#    Updated: 2026/05/21 14:52:09 by uvadakku         ###   ########.fr        #
+#    Updated: 2026/07/30 17:33:48 by uvadakku         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,13 +14,13 @@ CXX = c++
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -I includes
 
-NAME = fixed_point
+NAME = ./ex01
 
 SRC_DIR = srcs
 OBJ_DIR = objs
 
 SRCS = main.cpp \
-							Fixed.cpp
+		Fixed.cpp
 
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
 

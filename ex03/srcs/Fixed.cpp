@@ -6,7 +6,7 @@
 /*   By: uvadakku <uvadakku@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/28 11:40:50 by uvadakku          #+#    #+#             */
-/*   Updated: 2026/07/28 16:41:12 by uvadakku         ###   ########.fr       */
+/*   Updated: 2026/07/30 13:48:51 by uvadakku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ Fixed::~Fixed() {}
 Fixed &Fixed::operator=(Fixed const &other)
 {
 	if (this != &other)
-					_raw = other._raw;
+		_raw = other._raw;
 	return *this;
 }
 

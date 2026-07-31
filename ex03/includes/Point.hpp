@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Point.hpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: uvadakku <uvadakku@student.42heilbronn.    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/07/31 11:58:43 by uvadakku          #+#    #+#             */
+/*   Updated: 2026/07/31 11:58:44 by uvadakku         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef POINT_HPP
 #define POINT_HPP
 
@@ -14,7 +26,7 @@ class Point
 		Point(float const x, float const y); //parametrized constructor
 		Point(Point const &other); //copy constructor
 		Point &operator = (const Point &other); //copy assignment operator
-	 ~Point();
+	 	~Point();
 
 	Fixed const &getX() const;
 	Fixed const &getY() const;

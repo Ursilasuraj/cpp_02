@@ -6,14 +6,12 @@
 /*   By: uvadakku <uvadakku@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/26 17:45:34 by uvadakku          #+#    #+#             */
-/*   Updated: 2026/07/28 16:52:40 by uvadakku         ###   ########.fr       */
+/*   Updated: 2026/07/31 11:52:01 by uvadakku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Point.hpp"
 #include <iostream>
-
-bool bsp(Point const a, Point const b, Point const c, Point const point);
 
 static void print_result(std::string const &label, bool result)
 {
@@ -24,12 +22,12 @@ int main()
 {
 	// Triangle ABC
 	Point a(0.0f, 0.0f);
-	Point b(10.0f, 0.0f);
+	Point b(10.0f, 5.0f);
 	Point c(5.0f, 10.0f);
 
 	std::cout << "Triangle vertices:" << std::endl;
 	std::cout << "A = (0, 0)" << std::endl;
-	std::cout << "B = (10, 0)" << std::endl;
+	std::cout << "B = (10, 5.0)" << std::endl;
 	std::cout << "C = (5, 10)\n" << std::endl;
 
 	// 1. Inside
